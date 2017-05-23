@@ -13,7 +13,7 @@
                 </div>
                 <div class="u-mb" style=" background-color: rgba(51, 51, 51, 0.7);">
                     <div class="u-tt">
-                        <h2 class="text-center">Our Core Products</h2>
+                        <h1 class="text-center">Our Core Products</h1>
                         <p>World-class Flexible Packaging Materials Supplier</p>
                     </div>
                 </div>

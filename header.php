@@ -49,7 +49,11 @@
 					  <span class="icon-bar"></span>
 					</button>
 				</div>
+
 				<div id="menu" class="collapse navbar-collapse ">
+                    <div class="u-logo">
+                        <img src="http://localhost/wrd-lxh/wp-content/themes/lxh/images/logo.png" >
+                    </div>
 					<?php
 						wp_nav_menu( array(
 							'theme_location' => 'primary',
