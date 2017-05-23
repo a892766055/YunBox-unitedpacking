@@ -1,11 +1,11 @@
 <div class="kadima_blog_area ">
-<?php $wl_theme_options = kadima_get_options();
-if($wl_theme_options['blog_title'] !='') { ?>
+<?php $theme_options = kadima_get_options();
+if($theme_options['blog_title'] !='') { ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="kadima_heading_title">
-					<h3><?php echo esc_attr($wl_theme_options['blog_title']); ?></h3>		
+					<h3><?php echo esc_attr($theme_options['blog_title']); ?></h3>		
 				</div>
 			</div>
 		</div>
