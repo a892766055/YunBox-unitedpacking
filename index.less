@@ -1,0 +1,396 @@
+body,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,p,input,select,textarea,form{margin: 0; padding: 0;}
+body{font:14px/1.5 "微软雅黑";}
+img{border:none;max-width: 100%}
+ul,ol,li{list-style:none;}
+input,select,textarea{outline:none;border:none;background:none;}
+textarea{resize:none;}
+a{text-decoration:none;}
+
+@cl:#fff;
+@cl1:#333;
+@cl2:#34b647;
+@fz:18px;
+@fz1:20px;
+@fz2:30px;
+//52,182,71
+//原banner属性修改
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
+  color: @cl2;
+  box-shadow:none !important;
+  background-color: inherit !important;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
+  color: @cl2;
+  box-shadow:none !important;
+}
+
+.navbar-default .navbar-nav>.active>a{
+  background-color:inherit;
+}
+.navbar-default .navbar-nav>li>a{
+  color: @cl;
+}
+.header_section{
+  display: none;
+}
+.navigation_menu{
+  z-index: 99;
+  position: fixed;
+  background-color: rgba(51, 51, 51, 0.7);
+  border-top:none;
+}
+.navbar-collapse{
+  border-top: none;
+  box-shadow:none;
+}
+#kadima_nav_top.affix{
+  border-bottom:@cl2;
+}
+
+
+.carousel{
+  margin-bottom: 0;
+}
+.kadima_service{
+  padding-top: 0;
+}
+
+//全屏视频解决方案
+
+#container {
+  overflow: hidden;
+  height: 1200px;
+  background: #edeae8;
+  position: relative;
+}
+
+video {
+  position: absolute;
+  /* Vertical and Horizontal center*/
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+}
+//全屏视频解决方案结束
+
+.carousel{
+  position: initial;
+}
+.m-tab{
+  position: absolute;
+  top: 0;
+  .u-active{
+    color: @cl;
+  }
+}
+.m-nav-wh{
+  position: relative;
+  .u-mb{
+    z-index: 10;
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .u-tt{
+    position: absolute;
+    top:40%;
+    right: 10%;
+    color: white;
+  }
+}
+#play1{
+  z-index: 11;
+  display: none;
+  top: 90% !important;
+  #play
+}
+#play{
+  z-index: 11;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin: 0 auto;
+  //width: 128px;
+  //height: 128px;
+  //background-image: url("../images/play.png");
+  transform: translateY(-50%);
+}
+.m-nav{
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(51, 51, 51, 0.7);
+
+  .u-logo{
+    position: absolute;
+    left: 280px;
+    margin-top: 10px;
+  }
+  a{
+    color: @cl;
+    text-decoration:none;
+  }
+  a:hover{
+    color: @cl2;
+  }
+  li{
+    z-index: 100;
+    position: relative;
+    left:33%;
+    display: inline-block;
+    margin: 20px 20px;
+    font-size: @fz;
+    color: @cl;
+    cursor:pointer
+  }
+}
+.m-body{
+  .u-title{
+    padding: 50px 0;
+    color: @cl;
+    background-color: @cl2;
+
+    .u-line{
+      display: block;
+      margin: 65px 0;
+      width: 100%;
+      height: 4px;
+      background-color: @cl;
+    }
+  }
+  .u-bgimg{
+    width: 100%;
+    height: 880px;
+    .u-bt{
+      margin-top: 50px;
+    }
+    .u-top{
+      margin: 70px 0 55px 0;
+      p{
+        font-size: @fz1;
+      }
+    }
+    .u-boxs{
+
+      .u-describe{
+        height: 100px !important;
+      }
+      h4{
+        padding-bottom: 0 !important;
+      }
+      .u-box
+    }
+    .u-box{
+      overflow: hidden;
+      margin: 10px auto;
+      padding: 20px;
+      margin-bottom: 70px;
+      display: flex;
+      cursor:pointer;
+      .u-left{
+        flex:3;
+      }
+      .u-right{
+        flex: 8;
+      }
+      .u-describe{
+        height: 115px;
+        line-height: 35px;
+        font-size: @fz - 4;
+        color: @cl1;
+
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+      }
+      .u-icon{
+        position: absolute;
+        top:3px;
+        display: inline-block;
+        margin-left: 10px;
+        width: 22px;
+        height: 22px;
+        background-image: url("images/icon.png");
+      }
+      .u-p{
+        position: absolute;
+        top:210px;
+        right: 95px;
+        display: inline-block;
+      }
+      h4{
+        padding-bottom: 15px;
+        font-size: @fz + 4;
+      }
+      p{
+        font-size: @fz ;
+      }
+    }
+  }
+  .u-hg{
+    height: 720px ;
+  }
+  .u-bgimgs{
+    margin: 0 auto;
+    max-width: 100%;
+    background-size:cover;
+    background-image: url("images/bg-img.png");
+  }
+}
+
+.u-box:hover{
+  opacity: 0.7;
+  border-radius: 2%;
+  background-color: @cl;
+  box-shadow: 0 0 15px   @cl1;
+
+}
+.m-body .u-bgimg .u-box:hover{
+  .u-icon{
+    background-image: url("images/icon-green.jpg");
+  }
+}
+
+//底部
+.m-ft{
+  background-color: @cl2;
+  .u-boxs{
+    margin-bottom:70px;
+  }
+  .u-title{
+    padding-top: 50px;
+    h2{
+      margin: 15px 0 ;
+      color: @cl;
+      font-size: @fz1 + 2;
+    }
+  }
+  .u-link{
+    font-size: @fz - 2;
+    height: 30px;
+    .u-plf{
+      padding-left: 60px;
+    }
+    .u-plfs{
+      padding-left: 25px;
+    }
+    a{
+      text-decoration:none;
+      color: @cl;
+    }
+    p{
+      display: inline-block;
+      height: 30px;
+      color: @cl;
+    }
+    label{
+      color: @cl;
+    }
+  }
+  .u-text{
+    padding-left: 50px;
+    textarea{
+      margin: 20px 0;
+      width: 82%;
+    }
+  }
+  .u-submit{
+    padding-right:70px ;
+  }
+}
+.u-link:hover{
+  a{
+    color:  @cl1;
+  }
+}
+.u-copyright{
+  margin-top: 5px;
+  padding-top: 3px ;
+  color: @cl;
+  border-top: 1px solid @cl;
+  img{
+    margin-left: 50px;
+    margin-bottom: 2px;
+  }
+}
+
+//动画效果
+.u-cont{
+  width:500px;
+  margin: 50px auto;
+}
+.u-bb{
+  position: relative;
+  display: flex;
+}
+
+.u-cont:hover{
+  .u-bb:before,.u-bb:after{
+    content: " ";
+    display: block;
+    position: absolute;
+    width:490px;
+    height:150px;
+    top: -10px;
+    left: -10px;
+    z-index:10;
+    border: 2px solid @cl2;
+    box-sizing: border-box;
+    -webkit-animation: clipAni 4s infinite linear;
+  }
+  .u-bb:before{
+    -webkit-animation-delay: -2s;
+  }
+}
+@keyframes  clipAni{
+  0%,100%{
+    clip:rect(0px,520px,160px,520px);
+  }
+  25%{
+    clip:rect(0px,520px,3px,0px);
+  }
+  50%{
+    clip:rect(0px,3px,160px,0px);
+  }
+  75%{
+    clip:rect(160px,520px,160px,0px);
+  }
+}
+
+.u-img{
+  transition:All 0.4s ease-in-out;
+  -webkit-transition:All 0.4s ease-in-out;
+  -moz-transition:All 0.4s ease-in-out;
+  -o-transition:All 0.4s ease-in-out;
+}
+
+.u-cont:hover{
+  .u-img{
+    transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotate{
+  from{-webkit-transform:rotate(0deg)}
+  to{-webkit-transform:rotate(360deg)}
+}
+@-moz-keyframes rotate{
+  from{-moz-transform:rotate(0deg)}
+  to{-moz-transform:rotate(360deg)}
+}
+@-ms-keyframes rotate{
+  from{-ms-transform:rotate(0deg)}
+  to{-ms-transform:rotate(360deg)}
+}
+@-o-keyframes rotate{
+  from{-o-transform:rotate(0deg)}
+  to{-o-transform:rotate(360deg)}
+}
