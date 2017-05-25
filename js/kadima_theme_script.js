@@ -1,5 +1,147 @@
 /* menu */
-jQuery(document).ready(function() {
+jQuery(document).ready(function($) {
+
+
+    /**
+     * Created by user on 2017/5/24.
+     */
+	//json.data
+    var name = "one";
+    var Random = Mock.Random;
+    Random.dataImage();
+    Random.date();
+    Random.cparagraph()
+    Random.paragraph()
+    Mock.mock('http://g.cn', {
+        "name": "@first",
+        "id": 123123,
+        "time": "@date",
+        'data': [
+            {
+                "id":1,
+                "edit": true,
+                "time": "@date",
+                "img": [
+                    {  'image': '@dataImage("100x100")'},
+                    {  'image': '@dataImage("100x100")'}
+                ],
+                'title':'@paragraph'
+            },
+            {
+                "id":2,
+                "edit": true,
+                "time": "@date",
+                "img": [
+                    {  'image': '@dataImage("100x100")'}
+                ],
+                'title':'@paragraph'
+            },
+            {
+                "id":3,
+                "edit": true,
+                "time": "@date",
+                "img": [
+                    {  'image': '@dataImage("100x100")'},
+                    {  'image': '@dataImage("100x100")'}
+
+                ],
+                'title':'@paragraph'
+            },
+            {
+                "id":4,
+                "edit": true,
+                "time": "@date",
+                "img": [
+                    {  'image': '@dataImage("100x100")'},
+                    {  'image': '@dataImage("100x100")'},
+                    {  'image': '@dataImage("100x100")'}
+                ],
+                'title':'@paragraph'
+            }
+        ]
+    });
+
+	//json.data     end
+
+
+
+    $("#u-btn").click(function () {
+            var datas =  $("#u-text").val();
+            // u-pro
+
+            $.ajax({
+                type:"post",
+                async:false,
+                dataType: "json",
+                url:"http://g.cn",
+                data:datas,
+                success:function (data) {
+                    var oL =  data.data.length;
+                    console.log(data)
+                    var text =   '<h2 class="col-md-12 text-center">Project progress diagram</h2>'+
+                        '<p class="col-md-3">Project start time:'+ data.time + '</p>'+
+                        '<p class="col-md-3">entry name:'+ data.name + '</p>'+
+                        '<p class="col-md-3">Order ID:'+ data.id + '</p>';
+                    $("#u-tit").append(text);
+
+                    var obj;
+                    var oIcon = ' <i class="sui-icon icon-pc-right"></i>';
+                    var oFi = ' <i class="triangle-right-bg"></i><i class="triangle-right"></i>';
+                    var oclass = ["todo","finished","current"];
+                    for(var i =1;i<=6;i++){
+                        if(i === oL){
+                            var oText = '<div class="wrap"> <div class="'+ oclass[2] +'"><label><span class="round">'+ i +'</span><span>The'+ i +'step</span></label> </div> </div>';
+                            obj += oText;
+                        }else if (i < oL){
+                            var oText = '<div class="wrap"> <div class="'+ oclass[1] +'"><label><span class="round">'+ oIcon +'</span><span>The'+ i +'step </span></label> '+ oFi +' </div> </div>';
+                            obj+= oText;
+                        }else{
+                            var oText = '<div class="wrap"> <div class="'+ oclass[0] +'"><label><span class="round">'+ i +'</span><span>The'+ i +'step </span></label> </div> </div>';
+                            obj+= oText;
+                        }
+                    }
+                    $("#u-pro").append(obj);
+                    oBd(data);
+                    $("#u-pro .wrap").click(function(){
+                        $("#u-pro .wrap").eq($(this).index()).addClass("active").siblings().removeClass('active');
+                        $("#u-bd .u-bds").hide().eq($(this).index()).show();
+                    });
+                }
+            });
+        });
+
+        function oBd(data) {
+            var oL =  data.data.length;
+            var oBd = '';
+            var obj = data;
+            for(var j=0;j<=oL-1;j++){
+                var bd  = '';
+                if(j==oL-1){
+                    bd =  '<div class="col-md-12 u-bds "><p class="col-md-3">'+ (j+1) +'End of phase:'+ obj.data[j].time +'</p>'+
+                        '<div class="col-md-12">'+ img(obj.data[j].img) +'</div>'+
+                        '<p class="col-md-offset-3 col-md-6 ">'+ obj.data[j].title +'</p></div>';
+                    oBd += bd;
+                }else{
+                    bd =  '<div class="col-md-12 u-bds" style="display: none"><p class="col-md-3">'+ (j+1) +'End of phase:'+ obj.data[j].time +'</p>'+
+                        '<div class="col-md-12">'+ img(obj.data[j].img) +'</div>'+
+                        '<p class="col-md-offset-3 col-md-6 ">'+ obj.data[j].title +'</p></div>';
+                    oBd += bd;
+                }
+            }
+            $("#u-bd").append(oBd)
+        }
+        function img(val) {
+            var data = val;
+            var oImg ='',img = null;
+            for(var i =0;i<data.length;i++){
+                img = '<img src="'+data[i].image+'">';
+                oImg += img;
+            }
+            return oImg;
+        }
+
+
+
 
 
     //首屏大视频处理
