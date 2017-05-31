@@ -17,7 +17,7 @@
         wp_enqueue_script('bootstrap-js', '//statics.yunclever.com/bootstrap/3.3.7/js/bootstrap.min.js', array('jquery'));
         wp_enqueue_script('video-js', '//statics.yunclever.com/videojs/5.17.0/video.min.js', array('jquery'));
 //        wp_enqueue_script('sui', '//g.alicdn.com/sj/dpl/1.5.1/js/sui.min.js', array('jquery'));
-        wp_enqueue_script('mock', '//mockjs.com/dist/mock.js', array('jquery'));
+//        wp_enqueue_script('mock', '//mockjs.com/dist/mock.js', array('jquery'));
         wp_enqueue_script('logjs', '//statics.yunclever.com/log/0.3.0/log.min.js', array('jquery'));
         wp_enqueue_script('kadima-theme-script', get_template_directory_uri() .'/js/kadima_theme_script.js', array('jquery'));
         if(is_front_page()){

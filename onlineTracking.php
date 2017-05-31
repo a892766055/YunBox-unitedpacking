@@ -2,6 +2,7 @@
 get_header(); ?>
     <head>
         <link href="http://g.alicdn.com/sj/dpl/1.5.1/css/sui.min.css" rel="stylesheet">
+        <script src="http://mockjs.com/dist/mock.js"></script>
     </head>
     <div class="container m-online" style="padding:250px 0 ">
         <div class="row">
