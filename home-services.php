@@ -67,6 +67,7 @@
                                                 <p class="text-left u-describe"><?php echo esc_attr($theme_options['custom_text_2_'.$i], true); ?></p>
                                             </div>
                                     </div>
+
                                 </div>
                             </div>
                     <?php } ?>
