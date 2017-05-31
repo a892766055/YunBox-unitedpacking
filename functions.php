@@ -13,7 +13,7 @@
         wp_enqueue_style('font-family', get_template_directory_uri() . '/css/font-family.css');
         wp_enqueue_style('default', get_template_directory_uri() . '/css/default.css');
         wp_enqueue_style('style', get_template_directory_uri() . '/style.css');
-        wp_enqueue_style('index', get_template_directory_uri() . '/index.css');
+        wp_enqueue_style('index', get_template_directory_uri() . '/indexs.css');
         wp_enqueue_script('bootstrap-js', '//statics.yunclever.com/bootstrap/3.3.7/js/bootstrap.min.js', array('jquery'));
         wp_enqueue_script('video-js', '//statics.yunclever.com/videojs/5.17.0/video.min.js', array('jquery'));
 //        wp_enqueue_script('sui', '//g.alicdn.com/sj/dpl/1.5.1/js/sui.min.js', array('jquery'));
@@ -139,7 +139,7 @@
 		add_theme_support( 'woocommerce' );
         add_editor_style('css/style.css');
 //        add_editor_style('css/sui.css');
-        add_editor_style('css/index.css');
+        add_editor_style('css/indexs.css');
 		require( WL_TEMPLATE_DIR . '/options-reset.php'); //Reset Theme Options Here
 		if (!isset($_COOKIE['yc_visit_cookie'])) {
 			setcookie('yc_visit_cookie', 1, time()+1209600, COOKIEPATH, COOKIE_DOMAIN, false);
