@@ -1,9 +1,9 @@
 <?php //Template Name:onlineTracking
-get_header();
-get_template_part('breadcrums'); ?>
+get_header(); ?>
     <head>
+        <link href="http://g.alicdn.com/sj/dpl/1.5.1/css/sui.min.css" rel="stylesheet">
     </head>
-    <div class="container m-online" style="padding:150px 0 ">
+    <div class="container m-online" style="padding:250px 0 ">
         <div class="row">
             <h3 class="col-md-12 text-center" >Order inquiry</h3>
             <div class="col-md-offset-3 col-lg-6">
@@ -14,10 +14,9 @@ get_template_part('breadcrums'); ?>
                 </span>
                 </div>
             </div>
-
-            <div id="u-tit"></div>
-            <div id="u-pro" class="sui-steps col-md-12 text-center"></div>
-            <div id="u-bd"></div>
+            <div id="u-tit" class="u-bd"></div>
+            <div id="u-pro" class="sui-steps u-bd col-md-12 text-center"></div>
+            <div id="u-bd" class="u-bd"></div>
         </div>
     </div>
 <?php get_footer(); ?>

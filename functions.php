@@ -16,7 +16,7 @@
         wp_enqueue_style('index', get_template_directory_uri() . '/index.css');
         wp_enqueue_script('bootstrap-js', '//statics.yunclever.com/bootstrap/3.3.7/js/bootstrap.min.js', array('jquery'));
         wp_enqueue_script('video-js', '//statics.yunclever.com/videojs/5.17.0/video.min.js', array('jquery'));
-        wp_enqueue_script('sui', '//g.alicdn.com/sj/dpl/1.5.1/js/sui.min.js', array('jquery'));
+//        wp_enqueue_script('sui', '//g.alicdn.com/sj/dpl/1.5.1/js/sui.min.js', array('jquery'));
         wp_enqueue_script('mock', '//mockjs.com/dist/mock.js', array('jquery'));
         wp_enqueue_script('logjs', '//statics.yunclever.com/log/0.3.0/log.min.js', array('jquery'));
         wp_enqueue_script('kadima-theme-script', get_template_directory_uri() .'/js/kadima_theme_script.js', array('jquery'));
@@ -138,7 +138,7 @@
 		add_theme_support( 'automatic-feed-links');
 		add_theme_support( 'woocommerce' );
         add_editor_style('css/style.css');
-        add_editor_style('css/sui.css');
+//        add_editor_style('css/sui.css');
         add_editor_style('css/index.css');
 		require( WL_TEMPLATE_DIR . '/options-reset.php'); //Reset Theme Options Here
 		if (!isset($_COOKIE['yc_visit_cookie'])) {

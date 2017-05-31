@@ -68,7 +68,6 @@ jQuery(document).ready(function($) {
     $("#u-btn").click(function () {
             var datas =  $("#u-text").val();
             // u-pro
-
             $.ajax({
                 type:"post",
                 async:false,
@@ -76,6 +75,7 @@ jQuery(document).ready(function($) {
                 url:"http://g.cn",
                 data:datas,
                 success:function (data) {
+                    $(".u-bd").empty();
                     var oL =  data.data.length;
                     console.log(data)
                     var text =   '<h2 class="col-md-12 text-center">Project progress diagram</h2>'+
@@ -140,10 +140,6 @@ jQuery(document).ready(function($) {
             return oImg;
         }
 
-
-
-
-
     //首屏大视频处理
     var video = document.querySelector('video')
         , container = document.querySelector('#container');
@@ -200,7 +196,11 @@ jQuery(document).ready(function($) {
 
         video.style.loop = true;
     };
-    video.addEventListener('loadedmetadata', setVideoDimensions, false);
+
+    if(video){
+        video.addEventListener('loadedmetadata', setVideoDimensions, false);
+    }
+
     window.addEventListener('resize', setVideoDimensions, false);
 //首屏大视频处理结束
 
