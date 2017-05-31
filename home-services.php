@@ -1,4 +1,17 @@
 <?php $theme_options = kadima_get_options(); ?>
+<head>
+    <style>
+        .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
+            color: #34b647;
+            box-shadow:none !important;
+        }
+        .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
+            color: #34b647;
+            box-shadow:none !important;
+            background-color: inherit !important;
+        }
+    </style>
+</head>
 <div class="m-body">
         <div class="row u-title">
             <div class="col-md-2 text-right ">
@@ -78,6 +91,12 @@
 <!--    </div>-->
 </div>
 <script>
+    jQuery(".navigation_menu").css({
+        "position":"fixed",
+        "background-color":"rgba(51, 51, 51, 0.7)",
+    });
+
+
     var video = document.querySelector('video')
         , container = document.querySelector('#container');
     var oImg = document.getElementById("u-img");

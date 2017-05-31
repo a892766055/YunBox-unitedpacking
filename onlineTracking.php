@@ -4,7 +4,7 @@ get_header(); ?>
         <link href="http://g.alicdn.com/sj/dpl/1.5.1/css/sui.min.css" rel="stylesheet">
         <script src="http://mockjs.com/dist/mock.js"></script>
     </head>
-    <div class="container m-online" style="padding:250px 0 ">
+    <div class="container m-online" style="padding:300px 0 ">
         <div class="row">
             <h3 class="col-md-12 text-center" >Order inquiry</h3>
             <div class="col-md-offset-3 col-lg-6">
@@ -21,9 +21,7 @@ get_header(); ?>
         </div>
     </div>
 <?php get_footer(); ?>
-
 <script>
-
         //json.data
         var name = "one";
         var Random = Mock.Random;
