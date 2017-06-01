@@ -45,6 +45,15 @@ a {
 .navbar-nav {
   margin-left: 200px;
 }
+.dropdown-menu {
+  background-color: rgba(52, 182, 71, 0.9);
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  background-color: rgba(52, 182, 71, 0.9);
+  box-shadow: none;
+}
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #333;
@@ -473,9 +482,12 @@ video {
   display: block;
 }
 .m-about table {
-  width: 200px;
+  width: 800px;
   margin: 100px 0;
+  border-style: none;
 }
 .m-about td {
   text-align: left;
+  vertical-align: inherit;
+  border: none;
 }

@@ -14,15 +14,26 @@ a{text-decoration:none;}
 @fz2:30px;
 //52,182,71
 //原banner属性修改
+
 .navbar-nav{
  margin-left: 200px;
 }
+.dropdown-menu{
+  background-color:rgba(52,182,71, 0.9);
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus{
+  background-color:rgba(52,182,71, 0.9);
+  box-shadow: none;
+}
+
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
   color: @cl1;
   box-shadow:none !important;
   background-color: inherit !important;
 }
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus{
   color: @cl1;
   box-shadow:none !important;
 }
@@ -433,10 +444,13 @@ video {
 //:footer-choose
 .m-about{
   table{
-    width: 200px;
+    width: 800px;
     margin: 100px 0;
+    border-style:none
   }
   td{
     text-align: left;
+    vertical-align: inherit;
+    border:none;
   }
 }

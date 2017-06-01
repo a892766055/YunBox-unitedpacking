@@ -1,5 +1,6 @@
 <?php //Template Name:footer-choose
 get_header(); ?>
+<img src="http://localhost/wrd-lxh/wp-content/themes/YunBox-unitedpacking/images/banner-n.jpg" >
 <div class="container">
     <div class="row">
         <div class="col-md-12 m-about">
@@ -81,7 +82,7 @@ get_header(); ?>
                 </tr>
                 <tr>
                     <td>
-                        <strong>Our m</strong><strong>ission :</strong><strong></strong><br>
+                        <strong>Our mission :</strong><strong></strong><br>
                     </td>
                     <td>
                         The mission of UPC is to provide perfect packaging solution for products and best services creates value for customers. <br>
@@ -89,7 +90,7 @@ get_header(); ?>
                 </tr>
                 <tr>
                     <td>
-                        <strong>Ou</strong><strong>r en</strong><strong>viromental policy</strong><strong>:</strong><strong></strong><br>
+                        <strong>Our enviromental policy:</strong><br>
                     </td>
                     <td>
                         UPC bases on supplying best quality products and the Environment- friendly packing solution, which meets modern trends, the material is to be lighter, stronger, and recyclable. Our packing solution minimizes environment degradation and saves the sources, we always take your local environment improvements as our first responsibility.

@@ -10,6 +10,14 @@
             box-shadow:none !important;
             background-color: inherit !important;
         }
+        .dropdown-menu{
+            background-color:rgba(51, 51, 51, 0.7);
+        }
+        .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover,
+        .navbar-default .navbar-nav>.open>a:focus{
+            background-color:rgba(51, 51, 51, 0.7);
+            box-shadow: none;
+        }
     </style>
 </head>
 <div class="m-body">
@@ -80,7 +88,6 @@
                                                 <p class="text-left u-describe"><?php echo esc_attr($theme_options['custom_text_2_'.$i], true); ?></p>
                                             </div>
                                     </div>
-
                                 </div>
                             </div>
                     <?php } ?>
