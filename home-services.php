@@ -18,6 +18,16 @@
             background-color:rgba(51, 51, 51, 0.7);
             box-shadow: none;
         }
+        .navigation_menu{
+            position: fixed;
+            background:rgba(51, 51, 51, 0.7);
+        }
+
+        @media (max-width: 767px) {
+            .navigation_menu{
+                position: relative;
+            }
+        }
     </style>
 </head>
 <div class="m-body">
@@ -98,10 +108,7 @@
 <!--    </div>-->
 </div>
 <script>
-    jQuery(".navigation_menu").css({
-        "position":"fixed",
-        "background-color":"rgba(51, 51, 51, 0.7)",
-    });
+
 
 
     var video = document.querySelector('video')

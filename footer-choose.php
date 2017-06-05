@@ -1,6 +1,11 @@
 <?php //Template Name:footer-choose
 get_header(); ?>
-<img src="http://localhost/wrd-lxh/wp-content/themes/YunBox-unitedpacking/images/banner-n.jpg" >
+<div class="m-ab-bn">
+    <span class="u-img-ct"><b> Why Choose Us</b></span>
+</div>
+<?php
+get_template_part('breadcrums');
+?>
 <div class="container">
     <div class="row">
         <div class="col-md-12 m-about">

@@ -1,7 +1,12 @@
 <?php //Template Name:footer-Design New Products
 get_header(); ?>
-<img src="http://localhost/wrd-lxh/wp-content/themes/YunBox-unitedpacking/images/banner-n.jpg" >
-<div class="container">
+<div class="m-ab-bn">
+    <span class="u-img-ct"><b> Design New Products</b></span>
+</div>
+<?php
+get_template_part('breadcrums');
+?>
+<div class="container" style="margin-bottom: 50px">
     <div class="row">
         <p align="left">
             <span><span style="font-size:16px;"><img src="http://localhost/wrd-lxh/wp-content/themes/YunBox-unitedpacking/images/p-3.gif" alt="" width="" height="" title="" align="left" style="">The target of UPC mainly provides the personality service for every clients. In

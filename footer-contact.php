@@ -1,29 +1,53 @@
 <?php //Template Name:footer-contact
 get_header(); ?>
-<img src="http://localhost/wrd-lxh/wp-content/themes/YunBox-unitedpacking/images/banner-n.jpg" >
+<div class="m-ab-bn">
+    <span class="u-img-ct"><b> contact us</b></span>
+</div>
+<?php
+get_template_part('breadcrums');
+?>
 <div class="container">
-    <div class="row">
-        <div class="page_right col-sm-9 col-xs-12 clearfix">
-            <div class="con-main clearfix">
-                <div class="con-left col-sm-6 col-xs-12">
-                    <p>
-                        <span class="gongsi"><strong><span >Add: </span></strong><span >RM 901-8.1001 Anling Road,Huli District (Golden Bay Fortunes Center),Xiamen,China</span></span><br>
-                        <strong><span >Tel : </span></strong><span >+86-592-3232201 3232202 3232203</span><br>
-                        <strong><span >Fax : </span></strong><span >+86-592-5635937</span>
-                    </p>
-                    <p>
-                        <strong><span >What is app / wechat: </span></strong><span > 86 13806016156,</span>
-                    </p>
-                    <p>
-                        <strong><span >Skype</span></strong><span >: pnlnui</span>
-                    </p>
-                    <div>
-                        <strong><span >Email : </span></strong><span >info@upcdeveloping.com</span>
+    <div class="row ">
+        <div class="col-md-12 u-ct">
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Name</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Name">
                     </div>
-                    <br></div>
-
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">E-mail</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="E-mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Subject</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Message</label>
+                        <textarea class="form-control" rows="6"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-default">SEND MESSAGE</button>
+                </form>
             </div>
-
+            <div class="col-md-6 u-ct-rg">
+                <div class="col-md-6 u-ab-box">
+                    <span class="ct-icon"></span>
+                    <p>RM 901-8.1001 Anling Road,Huli District (Golden Bay Fortunes Center),Xiamen,China </p>
+                </div>
+                <div class="col-md-6 u-ab-box">
+                    <span class="ct-icon1"></span>
+                    <p>TEL<br>+86-592-3232201 3232202 3232203</p>
+                </div>
+                <div class="col-md-6 u-ab-box">
+                    <span class="ct-icon2"></span>
+                    <p> info@upcdeveloping.com</p>
+                </div>
+                <div class="col-md-6 u-ab-box">
+                    <span class="ct-icon3"></span>
+                    <p>Skype<br>pnlnui</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
