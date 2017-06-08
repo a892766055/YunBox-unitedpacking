@@ -48,11 +48,23 @@ a {
 .dropdown-menu {
   background-color: rgba(52, 182, 71, 0.9);
 }
+.woocommerce div.product div.images img {
+  padding: 5px;
+}
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
   background-color: rgba(52, 182, 71, 0.9);
   box-shadow: none;
+}
+.u-border-b .navbar-nav {
+  margin-left: 60px;
+}
+.u-border-b li {
+  padding: 0 20px;
+}
+.u-border-b li a {
+  color: #34b647;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -65,6 +77,29 @@ a {
 .navbar-default .navbar-nav > .active > a:focus {
   color: #333;
   box-shadow: none !important;
+}
+.woocommerce ul.products li.product .woocommerce-loop-category__title,
+.woocommerce ul.products li.product .woocommerce-loop-product__title,
+.woocommerce ul.products li.product h3 {
+  height: 65px;
+  line-height: normal;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.woocommerce-result-count {
+  display: none;
+}
+.woocommerce-ordering {
+  display: none;
+}
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button {
+  color: #fff;
+  background-color: #34b647;
 }
 .navbar-default .navbar-nav > .active > a {
   background-color: inherit;
@@ -545,6 +580,9 @@ video {
 .m-ab-bn .u-img-ct {
   background-image: url("images/banner-n.jpg");
 }
+.m-ab-bn .u-img-pr {
+  background-image: url("images/banner-pr.png");
+}
 .u-ct {
   padding: 50px 0;
 }
@@ -585,10 +623,11 @@ video {
   overflow: hidden;
 }
 .u-ct .u-ct-rg {
+  margin-top: 20px;
   margin-bottom: 70px;
 }
 .u-ct .u-ct-rg span {
-  margin-top: 50px;
+  margin-top: 30px;
   display: inline-block;
   width: 60px;
   height: 42px;
@@ -598,8 +637,8 @@ video {
   font-size: 12px;
 }
 .u-ct .u-ct-rg .u-ab-box {
-  width: 260px;
-  height: 200px;
+  width: 200px;
+  height: 175px;
   margin: 5px 5px;
   padding-left: 0;
   padding-right: 0;
@@ -684,7 +723,17 @@ video {
     width: inherit;
   }
   .m-ab-bn b {
-    background-color: inherit;
+    display: none;
+  }
+  .m-ab-bn .u-img-pr {
+    background-size: cover;
+    height: 65px;
+    width: 320px;
+  }
+  .m-ab-bn .u-img-ct {
+    background-size: cover;
+    height: 65px;
+    width: 320px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {

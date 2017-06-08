@@ -23,10 +23,25 @@ a{text-decoration:none;}
 .dropdown-menu{
   background-color:rgba(52,182,71, 0.9);
 }
+.woocommerce div.product div.images img{
+  padding: 5px;
+}
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover,
 .navbar-default .navbar-nav>.open>a:focus{
   background-color:rgba(52,182,71, 0.9);
   box-shadow: none;
+}
+.u-border-b{
+  .navbar-nav{
+    margin-left: 60px;
+  }
+  li{
+    padding: 0 20px;
+    a{
+      color: @cl2;
+
+    }
+  }
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
@@ -38,6 +53,27 @@ a{text-decoration:none;}
 .navbar-default .navbar-nav>.active>a:focus{
   color: @cl1;
   box-shadow:none !important;
+}
+.woocommerce ul.products li.product .woocommerce-loop-category__title,
+.woocommerce ul.products li.product .woocommerce-loop-product__title,
+.woocommerce ul.products li.product h3{
+  height: 65px;
+  line-height: normal;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.woocommerce-result-count{
+  display: none;
+}
+.woocommerce-ordering{
+  display: none;
+}
+.woocommerce #respond input#submit, .woocommerce a.button,
+.woocommerce button.button, .woocommerce input.button{
+  color: @cl;
+  background-color: @cl2;
 }
 
 .navbar-default .navbar-nav>.active>a{
@@ -511,9 +547,9 @@ video {
   .u-img-ct{
     background-image: url("images/banner-n.jpg");
   }
-  //.u-img-ab{
-  //  background-image: url("images/old-banner.jpg");
-  //}
+  .u-img-pr{
+    background-image: url("images/banner-pr.png");
+  }
   //.u-img-nw{
   //  background-image: url("images/nw-br.png");
   //}
@@ -558,9 +594,10 @@ video {
     }
   }
   .u-ct-rg{
+    margin-top: 20px;
     margin-bottom: 70px;
     span{
-      margin-top: 50px;
+      margin-top: 30px;
       display: inline-block;
       width: 60px;
       height: 42px;
@@ -570,8 +607,8 @@ video {
       font-size: 12px;
     }
     .u-ab-box{
-      width: 260px;
-      height: 200px;
+      width: 200px;
+      height: 175px;
       margin: 5px 5px;
       padding-left: 0;
       padding-right: 0;
@@ -667,8 +704,18 @@ video {
   .m-about table{
     width: inherit;
   }
-  .m-ab-bn b{
-   background-color: inherit;
+  .m-ab-bn {
+    b{
+    display: none;
+    }
+    .u-img-pr{
+        background-size: cover;
+        height: 65px;
+        width: 320px;
+    }
+    .u-img-ct{
+      .u-img-pr
+    }
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
