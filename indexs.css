@@ -57,6 +57,9 @@ a {
   background-color: rgba(52, 182, 71, 0.9);
   box-shadow: none;
 }
+.u-border-b {
+  margin-top: -70px;
+}
 .u-border-b .navbar-nav {
   margin-left: 60px;
 }
