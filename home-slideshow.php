@@ -13,8 +13,8 @@
                 </div>
                 <div class="u-mb" style=" background-color: rgba(51, 51, 51, 0.7);">
                     <div class="u-tt">
-                        <h1 class="text-center">Our Core Products</h1>
-                        <p>World-class Flexible Packaging Materials Supplier</p>
+                        <h1 class="text-center" style="color:#fff;">OEM / ODM ARE WELCOME</h1>
+                        <p>World-class Flexible Packaging Solution Supplier</p>
                     </div>
                 </div>
             </div>

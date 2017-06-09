@@ -1,6 +1,5 @@
 <?php $theme_options = kadima_get_options(); ?>
-<head>
-    <style>
+<style>
         .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
             color: #34b647;
             box-shadow:none !important;
@@ -29,14 +28,13 @@
             }
         }
     </style>
-</head>
 <div class="m-body">
         <div class="row u-title">
             <div class="col-md-2 text-right ">
                 <i class="u-line"></i>
             </div>
             <div class="col-md-8 text-center">
-                <h2 class="u-title">Ideal for Packing Solution, OEM  and ODM are welcome in our company.</h2>
+                <h2 class="u-title">UNITEDPACKING COOPERATION, Ideal for One-Stop Packing Solution.</h2>
             </div>
             <div class="col-md-2 text-left">
                 <i class="u-line"></i>
@@ -47,7 +45,7 @@
                 <div class="container">
                     <div class="u-top text-center">
                         <h1>Our Core Products</h1>
-                        <p>World-class Flexible Packaging Materials Supplier</p>
+                        <p></p>
                     </div>
                     <?php for($i=1; $i<=6; $i++ ) { ?>
                         <div class=" col-md-4 ">
@@ -71,7 +69,7 @@
                 <i class="u-line"></i>
             </div>
             <div class="col-md-8 text-center">
-                <h2 class="u-title">Professional skiller from UPC will come to Audit every production line.</h2>
+                <h2 class="u-title">Professional Skiller From UPC Will Come To Audit Every Production Line.</h2>
             </div>
             <div class="col-md-2 text-left">
                 <i class="u-line"></i>
@@ -82,7 +80,7 @@
                 <div class="container">
                     <div class="u-top text-center">
                         <h1>Our Capabilities</h1>
-                        <p>World-class Flexible Packaging Materials Supplier</p>
+                        <p></p>
                     </div>
                     <div class="row">
                     <?php for($i=1; $i<=4; $i++ ) { ?>
@@ -93,7 +91,7 @@
                                                 <img class="u-img"  src="">
                                                 <img class="u-img"  src="<?php echo esc_attr($theme_options['custom_img_2_'.$i]); ?>">
                                             </div>
-                                            <div class="u-right">
+                                            <div class="u-right" style="padding-left:1em;">
                                                 <h4 class="text-center"><?php echo esc_attr($theme_options['custom_title_2_'.$i]); ?></h4>
                                                 <p class="text-left u-describe"><?php echo esc_attr($theme_options['custom_text_2_'.$i], true); ?></p>
                                             </div>

@@ -6,7 +6,7 @@
 	function kadima_scripts() {
         wp_enqueue_style('bootstrap', '//statics.yunclever.com/bootstrap/3.3.7/css/bootstrap.min.css');
         wp_enqueue_style('animations', '//statics.yunclever.com/animate/3.5.1/animate.css');
-        wp_enqueue_style('sui', '//g.alicdn.com/sj/dpl/1.5.1/css/sui.min.css');
+        //wp_enqueue_style('sui', '//g.alicdn.com/sj/dpl/1.5.1/css/sui.min.css');
         //wp_enqueue_style('theme-animtae', get_template_directory_uri() . '/css/theme-animtae.css');
         wp_enqueue_style('font-awesome', '//statics.yunclever.com/font-awesome/4.7.0/css/font-awesome.min.css');
         wp_enqueue_style('video-js-css', '//statics.yunclever.com/videojs/5.17.0/video-js.min.css');
