@@ -103,11 +103,36 @@
                 </div>
             </div>
         </div>
+    <div class="row u-bd4">
+        <div class="container">
+            <div class=" row">
+                <div class="u-top text-center">
+                    <h1>About us</h1>
+                    <p>Established in 2004, Enrich Enterprise (Xiamen) Limited is engaged in the manufacturing and exporter of loofah,
+                        sisal, ramie, flax, and pumice for bathroom use. Our products achieve a good reputation in
+                        customers from North America and Europe for our creative designs.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="http://unitedpacking.hk1i1.yunclever.com/wp-content/themes/kadima/images/ab-1.jpg" >
+                </div>
+                <div class="col-md-6">
+                    <div class="col-md-12 u-img">
+                        <img src="http://unitedpacking.hk1i1.yunclever.com/wp-content/themes/kadima/images/ab-2.jpg" >
+                    </div>
+                    <div class="col-md-12 u-img">
+                        <img src="http://unitedpacking.hk1i1.yunclever.com/wp-content/themes/kadima/images/ab-3.jpg" >
+                    </div>
+                </div>
+                <div class="col-md-12 text-center">
+                    <input type="button" class="btn u-btn btn-warning" value="More..">
+                </div>
+            </div>
+        </div>
+    </div>
 <!--    </div>-->
 </div>
 <script>
-
-
 
     var video = document.querySelector('video')
         , container = document.querySelector('#container');

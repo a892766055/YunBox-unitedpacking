@@ -13,16 +13,16 @@ get_template_part('breadcrums');
                 <div class="col-md-6">
                     <form>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Name</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Name">
+                        <label for="exampleInputEmail1">Name</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">E-mail</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="E-mail">
+                            <input type="email" class="form-control" id="exampleInputPassword1" placeholder="E-mail">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Subject</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Subject">
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Subject">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Message</label>

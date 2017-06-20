@@ -61,7 +61,7 @@ a {
   margin-top: -70px;
 }
 .u-border-b .navbar-nav {
-  margin-left: 60px;
+  margin-left: 40px;
 }
 .u-border-b li {
   padding: 0 20px;
@@ -587,7 +587,7 @@ video {
   background-image: url("images/banner-pr.png");
 }
 .u-ct {
-  padding: 50px 0;
+  padding-bottom: 50px;
 }
 .u-ct .m-ab-bd {
   margin-bottom: 70px;
@@ -677,6 +677,46 @@ video {
 }
 .u-ct .u-ct-rg .u-ab-box:hover .ct-icon3 {
   background-image: url("images/ct-icon-2.png");
+}
+.u-bd4 {
+  border-top: 20px solid #f5ba2c;
+  padding-bottom: 50px;
+}
+.u-bd4 .u-top {
+  padding: 35px 0;
+}
+.u-bd4 .u-img img {
+  padding-bottom: 45px;
+}
+.u-bd4 .u-btn {
+  width: 150px;
+  font-size: 20px;
+}
+.u-pbtn {
+  margin: 25px auto;
+  width: 500px;
+  padding: 4px;
+  text-align: center;
+  border: 1px solid #4cb9fc;
+}
+.u-pbtn i {
+  display: inline-block;
+  width: 490px;
+  height: 60px;
+  font-size: 30px;
+  font-style: normal;
+  padding-top: 15px;
+  color: #fff;
+  background-color: #4cb9fc;
+}
+.u-bimg {
+  text-align: center;
+}
+.u-bimg p {
+  font-size: 22px;
+}
+.u-box2 .u-img {
+  padding: 35px ;
 }
 @media (max-width: 767px) {
   .navbar-nav {

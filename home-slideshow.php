@@ -8,7 +8,7 @@
             <div  class="item active">
                 <div id="container"  style="height: 800px">
                     <video autoplay muted loop="loop" >
-                        <source  src="http://unitedpacking.hk1i1.yunclever.com/wp-content/themes/kadima/vedio/ad.mp4" type="video/mp4">
+                        <source  src="http://unitedpacking.hk1i1.yunclever.com/wp-content/themes/kadima/video/ad.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="u-mb" style=" background-color: rgba(51, 51, 51, 0.7);">

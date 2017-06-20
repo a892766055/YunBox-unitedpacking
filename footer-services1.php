@@ -10,7 +10,7 @@ get_template_part('breadcrums');
     <div class="row">
 
         <div class="about-main"><p>
-                <img src="http://unitedpacking.hk1i1.yunclever.com/wrd-lxh/wp-content/themes/YunBox-unitedpacking/images/p-1.jpg" alt="" width="" height="" title="" align="left" style="">Professional skiller from UPC will come to Audit every production line before running the mass production for each products, make sure it is to meet the standard for packaging, below is the process of production&nbsp;by Audit:
+                <img src="http://unitedpacking.hk1i1.yunclever.com/wp-content/themes/kadima/images/p-1.jpg" alt="" width="" height="" title="" align="left" style="">Professional skiller from UPC will come to Audit every production line before running the mass production for each products, make sure it is to meet the standard for packaging, below is the process of production&nbsp;by Audit:
             </p>
             <p>
                 <strong>1. Raw materials </strong><br>
@@ -45,7 +45,7 @@ get_template_part('breadcrums');
                 <br>
             </p>
             <p align="right">
-                <span style="font-family:Arial, Verdana, sans-serif;background-color:#FFFFFF;"></span> <img alt="" src="http://unitedpacking.hk1i1.yunclever.com/wrd-lxh/wp-content/themes/YunBox-unitedpacking/images/p-2.jpg" style="" width="" height="">
+                <span style="font-family:Arial, Verdana, sans-serif;background-color:#FFFFFF;"></span> <img alt="" src="http://unitedpacking.hk1i1.yunclever.com/wp-content/themes/kadima/images/p-2.jpg" style="" width="" height="">
             </p>
             <p>
                 <br>

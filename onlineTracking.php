@@ -20,6 +20,11 @@ get_header(); ?>
             <div id="u-bd" class="u-bd"></div>
         </div>
     </div>
+<div class="col-md-12 text-center">
+
+</div>
+
+
 <?php get_footer(); ?>
 <script>
         //json.data
@@ -38,42 +43,60 @@ get_header(); ?>
                     "id":1,
                     "edit": true,
                     "time": "@date",
+                    "stage":"order time",
+                    "text":"June 20, 2017",
+                    "imges":"http://unitedpacking.hk1i1.yunclever.com/wp-content/themes/kadima/images/o-t.png",
                     "img": [
-                        {  'image': '@dataImage("100x100")'},
-                        {  'image': '@dataImage("100x100")'}
                     ],
-                    'title':'@paragraph'
                 },
                 {
                     "id":2,
                     "edit": true,
                     "time": "@date",
+                    "stage":"Row time",
+                    "text":"June 20, 2017",
+                    "imges":"http://unitedpacking.hk1i1.yunclever.com/wp-content/themes/kadima/images/o-t.png",
                     "img": [
-                        {  'image': '@dataImage("100x100")'}
+                        {  'image': '@dataImage("200x200")'}
                     ],
-                    'title':'@paragraph'
                 },
                 {
                     "id":3,
                     "edit": true,
                     "time": "@date",
+                    "stage":"Booking time",
+                    "text":"June 20, 2017",
+                    "imges":"http://unitedpacking.hk1i1.yunclever.com/wp-content/themes/kadima/images/o-t.png",
                     "img": [
-                        {  'image': '@dataImage("100x100")'},
-                        {  'image': '@dataImage("100x100")'}
-
+                        {  'image': '@dataImage("200x200")'},
+                        {  'image': '@dataImage("200x200")'},
+                        {  'image': '@dataImage("200x200")'},
+                        {  'image': '@dataImage("200x200")'}
                     ],
-                    'title':'@paragraph'
                 },
                 {
                     "id":4,
                     "edit": true,
                     "time": "@date",
+                    "stage":"departure time",
+                    "text":"June 20, 2017",
+                    "imges":"http://unitedpacking.hk1i1.yunclever.com/wp-content/themes/kadima/images/o-c.png",
                     "img": [
-                        {  'image': '@dataImage("100x100")'},
-                        {  'image': '@dataImage("100x100")'},
-                        {  'image': '@dataImage("100x100")'}
+                        {  'image': '@dataImage("200x200")'},
+                        {  'image': '@dataImage("200x200")'},
+                        {  'image': '@dataImage("200x200")'},
+                        {  'image': '@dataImage("200x200")'},
+                        {  'image': '@dataImage("200x200")'}
                     ],
-                    'title':'@paragraph'
+                },
+                {
+                    "id":5,
+                    "edit": true,
+                    "stage":" ",
+                    "time": "@date",
+                    "text":"8888-8888",
+                    "imges":"http://unitedpacking.hk1i1.yunclever.com/wp-content/themes/kadima/images/o-d.png",
+                    "img": [],
                 }
             ]
         });
@@ -90,7 +113,7 @@ get_header(); ?>
                 url:"http://g.cn",
                 data:datas,
                 success:function (data) {
-                     jQuery(".u-bd").empty();
+                    jQuery(".u-bd").empty();
                     var oL =  data.data.length;
                     console.log(data)
                     var text =   '<h2 class="col-md-12 text-center">Project progress diagram</h2>'+
@@ -124,7 +147,6 @@ get_header(); ?>
                 }
             });
         });
-
         function oBd(data) {
             var oL =  data.data.length;
             var oBd = '';
@@ -133,13 +155,13 @@ get_header(); ?>
                 var bd  = '';
                 if(j==oL-1){
                     bd =  '<div class="col-md-12 u-bds "><p class="col-md-3">'+ (j+1) +'End of phase:'+ obj.data[j].time +'</p>'+
-                        '<div class="col-md-12">'+ img(obj.data[j].img) +'</div>'+
-                        '<p class="col-md-offset-3 col-md-6 ">'+ obj.data[j].title +'</p></div>';
+                        '<div class="col-md-12"><div class="u-bimg"><img src="'+ obj.data[j].imges +'"><p>'+ obj.data[j].stage +' </p> </div> <p class="u-pbtn"><i> '+ obj.data[j].text +'</i></p></div>'+
+                        '<div class="col-md-12">'+ img(obj.data[j].img) +'</div>'+ '</div>';
                     oBd += bd;
                 }else{
                     bd =  '<div class="col-md-12 u-bds" style="display: none"><p class="col-md-3">'+ (j+1) +'End of phase:'+ obj.data[j].time +'</p>'+
-                        '<div class="col-md-12">'+ img(obj.data[j].img) +'</div>'+
-                        '<p class="col-md-offset-3 col-md-6 ">'+ obj.data[j].title +'</p></div>';
+                        '<div class="col-md-12"><div class="u-bimg"><img src="'+ obj.data[j].imges +'"><p>'+ obj.data[j].stage +' </p> </div><p class="u-pbtn"><i> '+ obj.data[j].text +'</i></p></div>'+
+                        '<div class="col-md-12 u-box2">'+ img(obj.data[j].img) +'</div>'+ '</div>';
                     oBd += bd;
                 }
             }
@@ -149,7 +171,7 @@ get_header(); ?>
             var data = val;
             var oImg ='',img = null;
             for(var i =0;i<data.length;i++){
-                img = '<img src="'+data[i].image+'">';
+                img = '<img class="u-img" src="'+data[i].image+'">';
                 oImg += img;
             }
             return oImg;
