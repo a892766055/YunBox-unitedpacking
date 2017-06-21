@@ -92,7 +92,7 @@ get_header(); ?>
                 {
                     "id":5,
                     "edit": true,
-                    "stage":" ",
+                    "stage":"DHL Numbers",
                     "time": "@date",
                     "text":"8888-8888",
                     "imges":"http://unitedpacking.hk1i1.yunclever.com/wp-content/themes/kadima/images/o-d.png",
@@ -126,15 +126,17 @@ get_header(); ?>
                     var oIcon = ' <i class="sui-icon icon-pc-right"></i>';
                     var oFi = ' <i class="triangle-right-bg"></i><i class="triangle-right"></i>';
                     var oclass = ["todo","finished","current"];
-                    for(var i =1;i<=5;i++){
+                    console.log(data.data)
+
+                    for(var i =0;i<5;i++){
                         if(i === oL){
-                            var oText = '<div class="wrap"> <div class="'+ oclass[2] +'"><label><span class="round">'+ i +'</span><span>The'+ i +'step</span></label> </div> </div>';
+                            var oText = '<div class="wrap"> <div class="'+ oclass[2] +'"><label><span class="round">'+ i +'</span><span>'+ data.data[i].stage +'</span></label> </div> </div>';
                             obj += oText;
                         }else if (i < oL){
-                            var oText = '<div class="wrap"> <div class="'+ oclass[1] +'"><label><span class="round">'+ oIcon +'</span><span>The'+ i +'step </span></label> '+ oFi +' </div> </div>';
+                            var oText = '<div class="wrap"> <div class="'+ oclass[1] +'"><label><span class="round">'+ oIcon +'</span><span>'+ data.data[i].stage +' </span></label> '+ oFi +' </div> </div>';
                             obj+= oText;
                         }else{
-                            var oText = '<div class="wrap"> <div class="'+ oclass[0] +'"><label><span class="round">'+ i +'</span><span>The'+ i +'step </span></label> </div> </div>';
+                            var oText = '<div class="wrap"> <div class="'+ oclass[0] +'"><label><span class="round">'+ i +'</span><span>'+ data.data[i].stage +' </span></label> </div> </div>';
                             obj+= oText;
                         }
                     }

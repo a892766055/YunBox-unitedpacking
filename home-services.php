@@ -108,7 +108,7 @@
             <div class=" row">
                 <div class="u-top text-center">
                     <h1>About us</h1>
-                    <p>Established in 2010 ,XIAMEN UPC IMP & EXP CO.,LTD is engaged in supplying the amber pharmaceutical glass bottle, beer glass bottle ,beverage glass bottle,glass jar and cosmetic bottle ect. The mission of us is to provide perfect packaging solution and best service to our customers from all over the world
+                    <p>Established in 2010 ,&nbsp;&nbsp; XIAMEN UPC IMP & EXP CO.,&nbsp;&nbsp; LTD is engaged in supplying the amber pharmaceutical glass bottle, &nbsp;&nbsp;beer glass bottle ,&nbsp;&nbsp; beverage glass bottle,glass jar and cosmetic bottle ect.&nbsp;&nbsp; The mission of us is to provide perfect packaging solution and best service to our customers from all over the world
                     </p>
                 </div>
                 <div class="col-md-6">
