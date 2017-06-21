@@ -526,7 +526,7 @@ video {
   color: cornflowerblue !important;
 }
 .m-online .active .finished {
-  color: cornflowerblue !important;
+  color: #333 !important;
 }
 .m-online .input-group {
   display: block;

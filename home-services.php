@@ -108,9 +108,7 @@
             <div class=" row">
                 <div class="u-top text-center">
                     <h1>About us</h1>
-                    <p>Established in 2004, Enrich Enterprise (Xiamen) Limited is engaged in the manufacturing and exporter of loofah,
-                        sisal, ramie, flax, and pumice for bathroom use. Our products achieve a good reputation in
-                        customers from North America and Europe for our creative designs.
+                    <p>Established in 2010 ,XIAMEN UPC IMP & EXP CO.,LTD is engaged in supplying the amber pharmaceutical glass bottle, beer glass bottle ,beverage glass bottle,glass jar and cosmetic bottle ect. The mission of us is to provide perfect packaging solution and best service to our customers from all over the world
                     </p>
                 </div>
                 <div class="col-md-6">

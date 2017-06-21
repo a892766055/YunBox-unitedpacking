@@ -126,7 +126,7 @@ get_header(); ?>
                     var oIcon = ' <i class="sui-icon icon-pc-right"></i>';
                     var oFi = ' <i class="triangle-right-bg"></i><i class="triangle-right"></i>';
                     var oclass = ["todo","finished","current"];
-                    for(var i =1;i<=6;i++){
+                    for(var i =1;i<=5;i++){
                         if(i === oL){
                             var oText = '<div class="wrap"> <div class="'+ oclass[2] +'"><label><span class="round">'+ i +'</span><span>The'+ i +'step</span></label> </div> </div>';
                             obj += oText;
