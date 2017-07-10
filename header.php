@@ -53,7 +53,7 @@
 				<div id="menu" class="collapse navbar-collapse ">
                     <div class="u-logo">
                         <img src="http://unitedpacking.hk1i1.yunclever.com/wp-content/themes/kadima/images/logo.png" >
-                </div>
+                    </div>
 					<?php
 						wp_nav_menu( array(
 							'theme_location' => 'primary',

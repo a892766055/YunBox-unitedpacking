@@ -34,7 +34,7 @@
                 <i class="u-line"></i>
             </div>
             <div class="col-md-8 text-center">
-                <h2 class="u-title">UNITEDPACKING COOPERATION, Ideal for One-Stop Packing Solution.</h2>
+                <h3 class="u-title">UNITEDPACKING COOPERATION, Ideal for One-Stop Packing Solution.</h3>
             </div>
             <div class="col-md-2 text-left">
                 <i class="u-line"></i>
@@ -44,8 +44,8 @@
             <div class="u-bgimg u-bgimgs">
                 <div class="container">
                     <div class="u-top text-center">
-                        <h1>Our Core Products</h1>
-                        <p></p>
+                        <h1>PR<b>ODUC</b>TS</h1>
+                        <p>World-class Flexible Packaging Materials Supplier</p>
                     </div>
                     <?php for($i=1; $i<=6; $i++ ) { ?>
                         <div class=" col-md-4 ">
@@ -64,70 +64,58 @@
                 </div>
             </div>
         </div>
-        <div class="row u-title">
-            <div class="col-md-2 text-right ">
-                <i class="u-line"></i>
-            </div>
-            <div class="col-md-8 text-center">
-                <h2 class="u-title">Professional Skiller From UPC Will Come To Audit Every Production Line.</h2>
-            </div>
-            <div class="col-md-2 text-left">
-                <i class="u-line"></i>
-            </div>
-        </div>
+        <div class=" u-bos"></div>
         <div class="row">
-            <div class="u-bgimg u-hg">
+            <div class=" u-hg">
                 <div class="container">
                     <div class="u-top text-center">
-                        <h1>Our Capabilities</h1>
-                        <p></p>
+                        <h1>ADVANTAGE</h1>
+                        <p>World-class Flexible Packaging Materials Supplier</p>
                     </div>
                     <div class="row">
                     <?php for($i=1; $i<=4; $i++ ) { ?>
-                            <div class="col-md-6">
-                                <div class=" u-boxs u-cont">
-                                    <div class="u-bb">
-                                            <div class="u-left u-bg">
-                                                <img class="u-img"  src="">
-                                                <img class="u-img"  src="<?php echo esc_attr($theme_options['custom_img_2_'.$i]); ?>">
-                                            </div>
-                                            <div class="u-right" style="padding-left:1em;">
-                                                <h4 class="text-center"><?php echo esc_attr($theme_options['custom_title_2_'.$i]); ?></h4>
-                                                <p class="text-left u-describe"><?php echo esc_attr($theme_options['custom_text_2_'.$i], true); ?></p>
-                                            </div>
-                                    </div>
+                        <div class="col-md-3">
+                            <div class=" u-boxs u-cont">
+                                <div class="u-left u-bg">
+                                    <img class="u-imgs" src="<?php echo esc_url(get_template_directory_uri() .'/images/icon-'.$i.'.png')?>">
+                                    <img class="u-img" src="<?php echo esc_attr($theme_options['custom_img_2_'.$i]); ?>">
+                                </div>
+                                <div class="u-right">
+                                    <h4 class="text-center"><?php echo esc_attr($theme_options['custom_title_2_'.$i]); ?></h4>
+                                    <p class="text-left u-describe"><?php echo esc_attr($theme_options['custom_text_2_'.$i], true); ?></p>
                                 </div>
                             </div>
+                        </div>
                     <?php } ?>
                     </div>
                 </div>
             </div>
         </div>
-    <div class="row u-bd4">
+    <div class=" u-bo"></div>
+    <div class="u-bd4 ">
         <div class="container">
-            <div class=" row">
-                <div class="u-top text-center">
-                    <h1>About us</h1>
-                    <p>Established in 2010 ,&nbsp;&nbsp; XIAMEN UPC IMP & EXP CO.,&nbsp;&nbsp; LTD is engaged in supplying the amber pharmaceutical glass bottle, &nbsp;&nbsp;beer glass bottle ,&nbsp;&nbsp; beverage glass bottle,glass jar and cosmetic bottle ect.&nbsp;&nbsp; The mission of us is to provide perfect packaging solution and best service to our customers from all over the world
-                    </p>
+            <div class="u-top text-center">
+                <h1>A<b>BOUT </b>US</h1>
+                <p>Established in 2010 ,&nbsp;&nbsp; XIAMEN UPC IMP & EXP CO.,&nbsp;&nbsp; LTD is engaged in supplying the amber pharmaceutical glass bottle, &nbsp;&nbsp;beer glass bottle ,&nbsp;&nbsp; beverage glass bottle,glass jar and cosmetic bottle ect.&nbsp;&nbsp; The mission of us is to provide perfect packaging solution and best service to our customers from all over the world
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="http://unitedpacking.hk1i1.yunclever.com/wp-content/themes/kadima/images/ab-1.jpg" >
+            </div>
+            <div class="col-md-6">
+                <div class="col-md-12 u-img">
+                    <img src="http://unitedpacking.hk1i1.yunclever.com/wp-content/themes/kadima/images/ab-2.jpg" >
                 </div>
-                <div class="col-md-6">
-                    <img src="http://unitedpacking.hk1i1.yunclever.com/wp-content/themes/kadima/images/ab-1.jpg" >
-                </div>
-                <div class="col-md-6">
-                    <div class="col-md-12 u-img">
-                        <img src="http://unitedpacking.hk1i1.yunclever.com/wp-content/themes/kadima/images/ab-2.jpg" >
-                    </div>
-                    <div class="col-md-12 u-img">
-                        <img src="http://unitedpacking.hk1i1.yunclever.com/wp-content/themes/kadima/images/ab-3.jpg" >
-                    </div>
-                </div>
-                <div class="col-md-12 text-center">
-                    <input type="button" class="btn u-btn btn-warning" value="More..">
+                <div class="col-md-12 u-img">
+                    <img src="http://unitedpacking.hk1i1.yunclever.com/wp-content/themes/kadima/images/ab-3.jpg" >
                 </div>
             </div>
+            <div class="col-md-12 text-center">
+                <input type="button" class="btn u-btn btn-warning" value="More..">
+            </div>
         </div>
-    </div>
+     </div>
+
 <!--    </div>-->
 </div>
 <script>
