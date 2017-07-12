@@ -44,8 +44,12 @@
             <div class="u-bgimg u-bgimgs">
                 <div class="container">
                     <div class="u-top text-center">
-                        <h1>PR<b>ODUC</b>TS</h1>
-                        <p>World-class Flexible Packaging Materials Supplier</p>
+                        <h1>
+                            PR<b>ODUC</b>TS
+                        </h1>
+                        <p>
+                            <?php echo esc_attr($theme_options['custom_desciption_1']); ?>
+                        </p>
                     </div>
                     <?php for($i=1; $i<=6; $i++ ) { ?>
                         <div class=" col-md-4 ">
@@ -69,8 +73,12 @@
             <div class=" u-hg">
                 <div class="container">
                     <div class="u-top text-center">
-                        <h1>ADVANTAGE</h1>
-                        <p>World-class Flexible Packaging Materials Supplier</p>
+                        <h1>
+                            <?php echo esc_attr($theme_options['custom_title_2']); ?>
+                        </h1>
+                        <p>
+                            <?php echo esc_attr($theme_options['custom_desciption_2']); ?>
+                        </p>
                     </div>
                     <div class="row">
                     <?php for($i=1; $i<=4; $i++ ) { ?>
@@ -96,18 +104,22 @@
         <div class="container">
             <div class="u-top text-center">
                 <h1>A<b>BOUT </b>US</h1>
-                <p>Established in 2010 ,&nbsp;&nbsp; XIAMEN UPC IMP & EXP CO.,&nbsp;&nbsp; LTD is engaged in supplying the amber pharmaceutical glass bottle, &nbsp;&nbsp;beer glass bottle ,&nbsp;&nbsp; beverage glass bottle,glass jar and cosmetic bottle ect.&nbsp;&nbsp; The mission of us is to provide perfect packaging solution and best service to our customers from all over the world
+                <p>
+                    <?php echo esc_attr($theme_options['custom_desciption_3']); ?>
                 </p>
             </div>
             <div class="col-md-6">
-                <img src="http://unitedpacking.hk1i1.yunclever.com/wp-content/themes/kadima/images/ab-1.jpg" >
+
+                <img src="<?php echo esc_attr($theme_options['custom_img_3_1']); ?>" >
             </div>
             <div class="col-md-6">
                 <div class="col-md-12 u-img">
-                    <img src="http://unitedpacking.hk1i1.yunclever.com/wp-content/themes/kadima/images/ab-2.jpg" >
+
+                    <img src="<?php echo esc_attr($theme_options['custom_img_3_2']); ?>" >
                 </div>
                 <div class="col-md-12 u-img">
-                    <img src="http://unitedpacking.hk1i1.yunclever.com/wp-content/themes/kadima/images/ab-3.jpg" >
+
+                    <img src="<?php echo esc_attr($theme_options['custom_img_3_3']); ?>" >
                 </div>
             </div>
             <div class="col-md-12 text-center">

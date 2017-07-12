@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
-    <div class="m-ab-bn">
-        <span class="u-img-pr"></span>
-    </div>
-<div class="kadima_header_breadcrum_title">	
+<div class="m-ab-bn">
+    <span class="u-img-pr"></span>
+</div>
+<div class="kadima_header_breadcrum_title">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -14,8 +14,22 @@
                 <!-- BreadCrumb -->
 			</div>
 		</div>
-	</div>	
+	</div>
 </div>
+
+
+<?php if(is_shop()||is_product_category())
+{
+    ?>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <img src="<?php echo esc_url(get_template_directory_uri() .'/images/p-top.png')?>" />
+            </div>
+        </div>
+    </div>
+<?php }?>
+
 <?php if(is_shop()||is_product_category())
 {
     ?>
@@ -30,6 +44,18 @@
                     )
                 );
                 ?>
+            </div>
+        </div>
+    </div>
+<?php }?>
+
+<?php if(is_shop()||is_product_category())
+{
+    ?>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <img class="u-p-img" src="<?php echo esc_url(get_template_directory_uri() .'/images/p-banner.png')?>" />
             </div>
         </div>
     </div>

@@ -121,6 +121,19 @@
         );
 	}
 	add_action( 'after_setup_theme', 'kadima_head_setup' );
+
+    function foo_theme_customize_register( WP_Customize_Manager $wp_customize ) {
+        $wp_customize->selective_refresh->add_partial( 'blogdescription', array(
+            'selector' => '.site-description',
+            'container_inclusive' => false,
+            'render_callback' => function() {
+                bloginfo( 'description' );
+            },
+        ) );
+    }
+    add_action( 'customize_register', 'foo_theme_customize_register' );
+
+
 	function kadima_head_setup() {
 		global $content_width;
 		//content width
@@ -129,6 +142,7 @@
 		add_image_size('wl_page_thumb',730,350,true);
 		add_image_size('blog_2c_thumb',570,350,true);
 		add_theme_support( 'title-tag' );
+        add_theme_support( 'customize-selective-refresh-widgets' );
 		load_theme_textdomain( 'kadima', WL_TEMPLATE_DIR_CORE . '/lang' );
 		add_theme_support( 'post-thumbnails' );
 		//set_post_thumbnail_size( 160 );

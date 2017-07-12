@@ -344,7 +344,14 @@ video {
   background-image: url("images/icon-green.jpg");
 }
 .m-ft {
-  background-color: #34b647;
+  background-color: #60a839;
+}
+.m-ft .kadima_footer_widget_column {
+  margin-top: 70px;
+  margin-bottom: 0;
+}
+.m-ft .kadima_footer_widget_column h3 {
+  color: #fff;
 }
 .m-ft .u-boxs {
   margin-bottom: 70px;
@@ -653,11 +660,27 @@ video {
 .u-ct .u-ct-rg .u-ab-box:hover .ct-icon3 {
   background-image: url("images/ct-icon-2.png");
 }
+.kadima_header_breadcrum_title {
+  border: none;
+  margin-bottom: 40px;
+}
+.u-p-img {
+  margin: 0 0 30px 0 ;
+}
 .u-bo {
   border-top: 20px solid #f5ba2c;
 }
 .u-bos {
   border-top: 20px solid #34b647;
+}
+.nav > li > a:focus,
+.nav > li > a:hover {
+  background-color: inherit;
+}
+.nav > li:focus,
+.nav > li:hover {
+  margin-bottom: -4px;
+  border-bottom: 4px solid #34b647;
 }
 .u-bd4 {
   background-size: cover;

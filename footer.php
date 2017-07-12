@@ -6,55 +6,20 @@
     <div class="m-ft">
         <div class="container u-boxs">
             <div class="row ">
-                <div class="col-md-2 col-md-offset-1">
-                    <ul>
-                        <li  class="u-title">
-                            <h2 >INFORMATION </h2>
-                        </li>
-                        <li class="u-link"><a href="#">Home</a></li>
-                        <li class="u-link"><a href="#">Why Choose Us</a></li>
-                        <li class="u-link"><a href="#">Packing Products</a></li>
-                        <li class="u-link"><a href="#">Services</a></li>
-                        <li class="u-link"><a href="#">Contact </a></li>
-                        <li class="u-link"><a href="#">Online Tracking</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 col-md-offset-1">
-                    <ul>
-                        <li class="u-title">
-                            <h2>RECENT NEWS</h2>
-                        </li>
-                        <li class="u-link">
-                            <a href="#">Jump link Jump link</a>
-                        </li>
-                        <li class="u-link">
-                            <a href="#">Jump link Jump link</a>
-                        </li>
-                        <li class="u-link">
-                            <a href="#">Jump link Jump link</a>
-                        </li>
-                        <li class="u-link">
-                            <a href="#">Jump link Jump link</a>
-                        </li>
-                        <li class="u-link">
-                            <a href="#">Jump link Jump link</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class=" col-md-offset-1 col-md-5">
-                    <ul>
-                        <li class="u-title">
-                            <h2 >CONTACT US</h2>
-                        </li>
-                        <li class="u-link">
-                            <p><b> phone:</b>+86 592 3232201 / 3232202</p>
-                            <p><b>Mobile + WhatsApp:</b> +86 13806016156</p>
-                            <p><b>Email</b>:info@Upcdveloping.com</p>
-                            <p ><b>Skype</b>:Pnlnui <b class="u-plfs">Fax:</b>+86 592 5635937</p>
-                            <p><b>PM </b>901-8.1001 Anling Road,Huli district,Xiamen,China</p>
-                        </li>
-                    </ul>
-                </div>
+                <?php
+                if ( is_active_sidebar( 'footer-widget-area' ) ){
+                    dynamic_sidebar( 'footer-widget-area' );
+                } else
+                {
+                    $args = array(
+                        'before_widget' => '<div class="col-sm-3 col-md-3 kadima_footer_widget_column">',
+                        'after_widget'  => '</div>',
+                        'before_title'  => '<div class="kadima_footer_widget_title">',
+                        'after_title'   => '<div class="kadima-footer-separator"></div></div>'
+                    );
+                    the_widget('WP_Widget_Pages', null, $args);
+                } ?>
+                
             </div>
         </div>
         <p class="text-center u-copyright">Copyright © 2015-2017 Unitedpacking Cooperation.All Rights Reserved.  </p>

@@ -1298,6 +1298,44 @@ function kadima_customizer( $wp_customize ) {
 			'settings'  => 'kadima_options[info_support]'
 		)
 	);
+
+    //Slider options
+    $wp_customize->selective_refresh->add_partial( 'kadima_nav_walker', array(
+        'selector' => ' ',
+        'container_inclusive' => false,
+    ) );
+    //Slider options
+    $wp_customize->selective_refresh->add_partial( 'kadima_options[slide_image_1]', array(
+        'selector' => '',
+        'container_inclusive' => false,
+    ) );
+    //serive
+    $wp_customize->selective_refresh->add_partial( 'kadima_options[service_home]', array(
+        'selector' => '',
+        'container_inclusive' => false,
+    ) );
+    //Custom Options1
+    $wp_customize->selective_refresh->add_partial( 'kadima_options[custom_home_1]', array(
+        'selector' => '.u-bgimgs .container',
+        'container_inclusive' => false,
+    ) );
+    //Custom Options2
+    $wp_customize->selective_refresh->add_partial( 'kadima_options[custom_home_2]', array(
+        'selector' => '.u-hg .container',
+        'container_inclusive' => false,
+    ) );
+    //Custom Options3
+    $wp_customize->selective_refresh->add_partial( 'kadima_options[custom_home_3]', array(
+        'selector' => '.u-bd4 .container ',
+        'container_inclusive' => false,
+    ) );
+    //Custom Options4
+    $wp_customize->selective_refresh->add_partial( 'kadima_options[custom_home_4]', array(
+        'selector' => '',
+        'container_inclusive' => false,
+    ) );
+
+
 }
 function kadima_sanitize_text( $input ) {
     return wp_kses_post( force_balance_tags( $input ) );

@@ -342,7 +342,14 @@ video {
 
 //底部
 .m-ft{
-  background-color: @cl2;
+  background-color:#60a839;
+  .kadima_footer_widget_column{
+    margin-top: 70px;
+    margin-bottom:0;
+    h3{
+      color: @cl;
+    }
+  }
   .u-boxs{
     margin-bottom:70px;
   }
@@ -684,12 +691,26 @@ video {
     }
   }
 }
+.kadima_header_breadcrum_title{
+  border: none;
+  margin-bottom:40px;
+}
+.u-p-img{
+  margin: 0 0 30px 0 ;
+}
 //bd4
 .u-bo{
   border-top: 20px solid #f5ba2c;
 }
 .u-bos{
   border-top: 20px solid @cl2;
+}
+.nav>li>a:focus, .nav>li>a:hover{
+  background-color: inherit;
+}
+.nav>li:focus, .nav>li:hover{
+margin-bottom: -4px;
+  border-bottom: 4px solid @cl2;
 }
 .u-bd4{
   background-size: cover;
