@@ -1299,9 +1299,14 @@ function kadima_customizer( $wp_customize ) {
 		)
 	);
 
+    //logo
+    $wp_customize->selective_refresh->add_partial( 'kadima_options[upload_image_logo]', array(
+        'selector' => '.u-logo a',
+        'container_inclusive' => false,
+    ) );
     //Slider options
     $wp_customize->selective_refresh->add_partial( 'kadima_nav_walker', array(
-        'selector' => ' ',
+        'selector' => '',
         'container_inclusive' => false,
     ) );
     //Slider options

@@ -52,7 +52,9 @@
 
 				<div id="menu" class="collapse navbar-collapse ">
                     <div class="u-logo">
-                        <img src="http://unitedpacking.hk1i1.yunclever.com/wp-content/themes/kadima/images/logo.png" >
+                        <a href="<?php echo esc_url(home_url( '/' )); ?>"  rel="home">
+                            <img src="<?php echo esc_attr($theme_options['upload_image_logo']); ?>">
+                        </a>
                     </div>
 					<?php
 						wp_nav_menu( array(
